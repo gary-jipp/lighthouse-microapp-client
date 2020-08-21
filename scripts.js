@@ -21,8 +21,8 @@ function addNewChild(parent) {
   const child = $("<li>");
   const text = $("#input").val();
 
-  // Calling an external REST service
-  const url = "https://api.kanye.rest";
+  // Calling our own REST service
+  const url = "http://localhost:8080/api/kanye";
   
   $.get(url, function (data) {
     // console.log(data);
