@@ -2,6 +2,7 @@ function toggleHidden($item) {
   $item.toggleClass("hidden");
 }
 
+// Stuff to do when page loads
 $(function () {
 
   $("#add").on("click", function (event) {
@@ -15,13 +16,14 @@ $(function () {
     
  });
 
+// Add a new list item
 function addNewChild(parent) {
   const child = $("<li>");
   const text = $("#input").val();
 
+  // Calling an external REST service
   const url = "https://api.kanye.rest";
-  const url1 = "http://localhost:8080/api/kanye";
-
+  
   $.get(url, function (data) {
     // console.log(data);
     child.text(data.quote);
