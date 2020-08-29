@@ -8,3 +8,5 @@
   - Simple Client Code - jQuery 
   - Making a REST call from the client
   - Simple Server Code - node Express
+
+git config commit.template .gitmessage.txt
