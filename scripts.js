@@ -19,15 +19,15 @@ $(function () {
 // Add a new list item
 function addNewChild(parent) {
   const child = $("<li>");
-  const text = $("#input").val();
-
+ 
   // Calling our own REST service
   const url = "http://localhost:8080/api/kanye";
   
   $.get(url, function (data) {
     // console.log(data);
     child.text(data.quote);
+    parent.append(child);
   });
 
-  parent.append(child);
+
 }
