@@ -10,20 +10,27 @@ $(function () {
   });
 });
 
-const renderQuote = function (text) {
-  const item = `<li>${text}</li>`;
+const renderQuotes = function (quotes) {
+  for (const quote of quotes) {
+    const item = `<li>${quote}</li>`;
 
-  const container = $("#container");
-  container.prepend(item);
+    const container = $("#container");
+    container.prepend(item);
+  }
 };
 
 // Add a new list item
 function getQuote() {
-  // Calling an external REST service
-  const url = "https://api.kanye.rest";
 
+  // Get the count from the input field
+  const count = $('#count').val();
+
+  // Call external REST service
+  const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes/${count}`;
+
+  // jQuery ajax
   $.get(url, function (data) {
     // console.log(data);
-    renderQuote(data.quote);
+    renderQuotes(data);
   });
 }
