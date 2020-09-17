@@ -4,12 +4,12 @@ $(function () {
 
     getQuotes();
     $("#count").focus();
-    $("#count").val('');
+    // $("#count").val('');
   });
 
   $("#clear").on("click", function (event) {
     $("#container").empty(); // This is how we clear "content" (the stuff between tags)
-    $("#count").val('');  // This is how we empty an <input>
+    // $("#count").val('');  // This is how we empty an <input>
   });
 });
 
