@@ -29,5 +29,5 @@ function addNewChild(parent) {
     child.text(data.quote);
   });
 
-  parent.append(child);
+  parent.prepend(child);
 }
