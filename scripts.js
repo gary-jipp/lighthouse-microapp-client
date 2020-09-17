@@ -25,15 +25,10 @@ const renderQuote = function (quote) {
 // Add a new list item
 const getQuote = function () {
   
-  // Get the count from the input field
-  const count = $("#count").val();
+  const data = [
+    "To err is human, to forgive devine",
+    "Some days i really wish I was a cat",
+  ];
 
-  // Call external REST service
-  const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes/${count}`;
-
-  // jQuery ajax
-  $.get(url, function (data) {
-    // console.log(data);
-    renderQuotes(data);
-  });
+  renderQuotes(data);
 };
