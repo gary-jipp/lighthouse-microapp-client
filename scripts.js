@@ -13,6 +13,7 @@ $(function () {
   });
 });
 
+// Notice we can define functions in this format as well
 const renderQuotes = function (quotes) {
   const container = $("#container");
 
@@ -21,18 +22,15 @@ const renderQuotes = function (quotes) {
     const item = `<li>${quote}</li>`;
     container.prepend(item);  // Adds to the beginning
   }
-
 };
 
-
-// Add a new list item
+// Get some new quotes
 function getQuotes() {
 
-  // Get the count from the input field
+  // Get the count as the value of the input field
   const count = $("#count").val();
 
-  // Call external REST service
-  // const url = `https://jsonplaceholder.typicode.com/todos/${count}`;
+  // Call external REST service with our count (that's what this url expects)
   const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes/${count}`;
 
   // jQuery ajax
