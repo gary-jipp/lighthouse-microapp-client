@@ -17,3 +17,12 @@
       margin: .2em;
       padding: .4em;
     }
+    input {
+      width: 6em;
+      font-size: 0.7em;
+    }
+    button {
+      height: 1.7em;
+      font-size: 0.7em;
+      background-color: lightgreen;
+    }
