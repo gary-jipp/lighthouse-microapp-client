@@ -24,10 +24,10 @@ const renderQuote = function (quote) {
 
 // Add a new list item
 const getQuote = function () {
-  
+
   const data = [
     "To err is human, to forgive devine",
-    "Some days i really wish I was a cat",
+    "Some days I really wish I was a cat",
   ];
 
   renderQuotes(data);
