@@ -6,12 +6,12 @@ function toggleHidden($item) {
 $(function () {
 
   $("#add").on("click", function (event) {
-    addNewChild($("#mylist"));
+    addNewChild($("#container"));
     $("input").focus();
   });
 
   $("#clear").on("click", function(event) {
-    $("#mylist").empty();
+    $("#container").empty();
     });
     
  });
