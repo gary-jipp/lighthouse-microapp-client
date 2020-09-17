@@ -30,6 +30,7 @@ const getQuote = function () {
   const count = $("#count").val();
 
   // Call external REST service
+  // const url = `https://jsonplaceholder.typicode.com/todos/${count}`;
   const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes/${count}`;
 
   // jQuery ajax
