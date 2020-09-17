@@ -10,16 +10,16 @@ $(function () {
   });
 });
 
-const renderQuotes = function (quotes) {
-  for (const quote of quotes) {
-    renderQuote(quote);
-  }
-};
-
 const renderQuote = function (quote) {
   const item = `<li>${quote}</li>`;
   const container = $("#container");
   container.prepend(item);
+};
+
+const renderQuotes = function (quotes) {
+  for (const quote of quotes) {
+    renderQuote(quote);
+  }
 };
 
 // Add a new list item
