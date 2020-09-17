@@ -12,18 +12,21 @@ $(function () {
 
 const renderQuotes = function (quotes) {
   for (const quote of quotes) {
-    const item = `<li>${quote}</li>`;
-
-    const container = $("#container");
-    container.prepend(item);
+    renderQuote(quote);
   }
 };
 
-// Add a new list item
-function getQuote() {
+const renderQuote = function (quote) {
+  const item = `<li>${quote}</li>`;
+  const container = $("#container");
+  container.prepend(item);
+};
 
+// Add a new list item
+const getQuote = function () {
+  
   // Get the count from the input field
-  const count = $('#count').val();
+  const count = $("#count").val();
 
   // Call external REST service
   const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes/${count}`;
@@ -33,4 +36,4 @@ function getQuote() {
     // console.log(data);
     renderQuotes(data);
   });
-}
+};
