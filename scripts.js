@@ -7,6 +7,7 @@ $(function () {
 
   $("#clear").on("click", function (event) {
     $("#container").empty();
+    $("#count").val('');
   });
 });
 
