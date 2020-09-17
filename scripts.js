@@ -1,31 +1,33 @@
 // Stuff to do when page loads
 $(function () {
   $("#add").on("click", function (event) {
-    getQuote();
-    $("input").focus();
+
+    getQuotes();
+    $("#count").focus();
+    $("#count").val('');
   });
 
   $("#clear").on("click", function (event) {
-    $("#container").empty();
-    $("#count").val('');
+    $("#container").empty(); // This is how we clear "content" (the stuff between tags)
+    $("#count").val('');  // This is how we empty an <input>
   });
 });
 
 const renderQuotes = function (quotes) {
+  const container = $("#container");
+
+  // Create an <li> item for each quotes and add to our container
   for (const quote of quotes) {
-    renderQuote(quote);
+    const item = `<li>${quote}</li>`;
+    container.prepend(item);  // Adds to the beginning
   }
+
 };
 
-const renderQuote = function (quote) {
-  const item = `<li>${quote}</li>`;
-  const container = $("#container");
-  container.prepend(item);
-};
 
 // Add a new list item
-const getQuote = function () {
-  
+function getQuotes() {
+
   // Get the count from the input field
   const count = $("#count").val();
 
@@ -34,8 +36,5 @@ const getQuote = function () {
   const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes/${count}`;
 
   // jQuery ajax
-  $.get(url, function (data) {
-    // console.log(data);
-    renderQuotes(data);
-  });
+  $.get(url, renderQuotes);
 };
