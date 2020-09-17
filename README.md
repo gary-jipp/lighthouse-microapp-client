@@ -1,12 +1,10 @@
-# Lighthouse MicroApp - Client Side code
+# Lighthouse MicroApp - Quote Generator
+
+	- Assign some actions to buttons
+  - Add List items dynamically using jQuery
+  - Call REST Web Services to get the data
+  
+
+  
 
 
-  - Separation of concerns
-  - Client vs Server 
-  - REST Web Services 
-  - Development Teams 
-  - Simple Client Code - jQuery 
-  - Making a REST call from the client
-  - Simple Server Code - node Express
-
-git config commit.template .gitmessage.txt
