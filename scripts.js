@@ -13,12 +13,12 @@ $(function () {
 
 // Notice we can define functions in this format as well
 const renderQuotes = function (quotes) {
-  const container = $("#container");
+  const $container = $("#container");
 
   // Create an <li> item for each quotes and add to our container
   for (const quote of quotes) {
     const $item = $(`<li>${quote}</li>`);
-    container.prepend($item);  // Adds to the beginning
+    $container.prepend($item);  // Adds to the beginning
   }
 };
 
