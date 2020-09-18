@@ -1,8 +1,7 @@
 // Stuff to do when page loads
 $(function () {
   $("#add").on("click", function (event) {
-
-    getQuotes();
+    addNewQuotes();
     $("#count").focus();
     // $("#count").val('');
   });
@@ -25,7 +24,7 @@ const renderQuotes = function (quotes) {
 };
 
 // Get some new quotes
-function getQuotes() {
+function addNewQuotes() {
 
   // Get the count as the value of the input field
   const count = $("#count").val();
