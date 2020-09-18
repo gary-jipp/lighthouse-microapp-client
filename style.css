@@ -4,12 +4,6 @@ html {
   padding:1em;
 }
 
-button {
-  height: 1.7em;
-  font-size: 0.7em;
-  background-color: lightgreen;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -18,9 +12,19 @@ ul {
 }
 
 li {
-  background-color: #EEE;
+  background-color: #eee;
   color: #888;
   border: 1px solid #888;
-  margin: .2em;
-  padding: .4em;
+  margin: 0.2em;
+  padding: 0.4em;
+}
+
+input {
+  width: 20em;
+  font-size: 0.7em;
+}
+button {
+  height: 1.7em;
+  font-size: 0.7em;
+  background-color: lightgreen;
 }
