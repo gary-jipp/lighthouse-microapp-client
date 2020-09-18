@@ -2,7 +2,6 @@
 $(function () {
   $("#add").on("click", function (event) {
     getQuote();
-    $("input").focus();
   });
 
   $("#clear").on("click", function (event) {
@@ -11,9 +10,9 @@ $(function () {
 });
 
 const renderQuote = function (quote) {
-  const item = `<li>${quote}</li>`;
-  const container = $("#container");
-  container.prepend(item);
+  const $item = $(`<li>${quote}</li>`);
+  const $container = $("#container");
+  $container.prepend($item);
 };
 
 const renderQuotes = function (quotes) {
