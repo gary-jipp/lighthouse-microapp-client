@@ -1,7 +1,7 @@
 // Stuff to do when page loads
 $(function () {
   $("#add").on("click", function (event) {
-    getQuote();
+    addNewQuotes();
   });
 
   $("#clear").on("click", function (event) {
@@ -22,7 +22,7 @@ const renderQuotes = function (quotes) {
 };
 
 // Add a new list item
-const getQuote = function () {
+const addNewQuotes = function () {
 
   const data = [
     "To err is human, to forgive devine",
