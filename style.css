@@ -20,7 +20,8 @@ li {
 }
 
 input {
-  width: 20em;
+  width: 5em;
+  height: 1em;
   font-size: 0.7em;
 }
 button {
