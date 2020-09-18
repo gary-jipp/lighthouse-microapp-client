@@ -1,28 +1,29 @@
-    html {
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 1.5em;
-    }
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding:1em;
+}
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 28em;
-    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 28em;
+}
 
-    li {
-      background-color: #EEE;
-      color: #888;
-      border: 1px solid #888;
-      margin: .2em;
-      padding: .4em;
-    }
-    input {
-      width: 6em;
-      font-size: 0.7em;
-    }
-    button {
-      height: 1.7em;
-      font-size: 0.7em;
-      background-color: lightgreen;
-    }
+li {
+  background-color: #EEE;
+  color: #888;
+  border: 1px solid #888;
+  margin: .2em;
+  padding: .4em;
+}
+input {
+  width: 6em;
+  font-size: 0.7em;
+}
+button {
+  height: 1.7em;
+  font-size: 0.7em;
+  background-color: lightgreen;
+}
