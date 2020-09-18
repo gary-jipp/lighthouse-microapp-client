@@ -1,10 +1,8 @@
 // Stuff to do when page loads
 $(function () {
   $("#add").on("click", function (event) {
-
-    getQuotes();
+    addNewQuotes();
     $("#count").focus();
-    $("#count").val('');
   });
 
   $("#clear").on("click", function (event) {
@@ -15,17 +13,17 @@ $(function () {
 
 // Notice we can define functions in this format as well
 const renderQuotes = function (quotes) {
-  const container = $("#container");
+  const $container = $("#container");
 
   // Create an <li> item for each quotes and add to our container
   for (const quote of quotes) {
-    const item = `<li>${quote}</li>`;
-    container.prepend(item);  // Adds to the beginning
+    const $item = $(`<li>${quote}</li>`);
+    $container.prepend($item);  // Adds to the beginning
   }
 };
 
 // Get some new quotes
-function getQuotes() {
+function addNewQuotes() {
 
   // Get the count as the value of the input field
   const count = $("#count").val();
