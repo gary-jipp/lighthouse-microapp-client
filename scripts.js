@@ -3,7 +3,6 @@ $(function () {
   $("#add").on("click", function (event) {
     addNewQuotes();
     $("#count").focus();
-    // $("#count").val('');
   });
 
   $("#clear").on("click", function (event) {
