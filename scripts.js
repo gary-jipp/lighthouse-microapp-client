@@ -17,8 +17,8 @@ const renderQuotes = function (quotes) {
 
   // Create an <li> item for each quotes and add to our container
   for (const quote of quotes) {
-    const $(item) = $(`<li>${quote}</li>`);
-    container.prepend($(item));  // Adds to the beginning
+    const $item = $(`<li>${quote}</li>`);
+    container.prepend($item);  // Adds to the beginning
   }
 };
 
