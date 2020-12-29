@@ -1,6 +1,6 @@
 
-// const serviceUrl = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
-const serviceUrl = 'http://localhost:8080/api/quotes';
+const serviceUrl = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
+// const serviceUrl = 'http://localhost:8080/api/quotes';
 
 // Stuff to do when page loads
 $(function () {
