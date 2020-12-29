@@ -1,3 +1,7 @@
+
+// const serviceUrl = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
+const serviceUrl = 'http://localhost:8080/api/quotes';
+
 // Stuff to do when page loads
 $(function () {
   $("#add").on("click", function (event) {
@@ -29,8 +33,8 @@ function addNewQuotes() {
   const count = $("#count").val();
 
   // Call external REST service with our count (that's what this url expects)
-  const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes/${count}`;
-
+  const url = serviceUrl + `/${count}`;
+  
   // jQuery ajax
   $.get(url, renderQuotes);
 };
